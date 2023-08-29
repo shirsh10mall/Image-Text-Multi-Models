@@ -1,51 +1,32 @@
-# Image-Text-Multi-Models
+# **Project Report: Image-Text Multi-Modal Deep Learning**
 
 
-Fine Tuned CLIP Model: https://huggingface.co/shirsh10mall/Fine_Tuned_CLIP_Model
+#### Fine Tuned CLIP Model: https://huggingface.co/shirsh10mall/Fine_Tuned_CLIP_Model
 
-Fine Tuned Image Captioning (ViT-BERT) Model - https://huggingface.co/shirsh10mall/Image_Captioning_FineTune_ViT_BERT_GCC
+#### Fine Tuned Image Captioning (ViT-BERT) Model - https://huggingface.co/shirsh10mall/Image_Captioning_FineTune_ViT_BERT_GCC
 
-Google's Conceptual Captioning Dataset with Embeddings: https://huggingface.co/datasets/shirsh10mall/Image_Captioning_GCC_Embeddings
-
-
-**Harnessing the Power of Multi-Modal Intelligence: A Deep Dive into Image-Text Multi-Model Project**
-
-In the ever-evolving landscape of AI, the fusion of image and text analysis has sparked a new era of multi-modal intelligence. This project embarks on an exhilarating journey to master two significant objectives: Image Captioning and Image Retrieval, where images and text interact harmoniously to enrich understanding and user experiences.
-
-**A Trio of Datasets Unveil Diversity and Complexity:**
-
-Three diverse datasets lay the groundwork for this ambitious project's voyage:
-
-1. **Conceptual Captioning Dataset**: A fraction of Google's vast repository, this collection boasts 145k images with associated captions harvested from alt-text HTML attributes. Each image encapsulates a distinct theme, and the captions are culled from the web, offering an array of styles and expressions.
-
-2. **Flickr 8k Dataset**: Purposefully designed for benchmarking image description and retrieval tasks, this collection features 8,000 images, each paired with five distinct captions. The dataset's careful curation ensures representation across various scenes and contexts.
-
-3. **Custom Dataset Creation**: Fusing creativity with technology, a bespoke dataset emerges, composed of 1,000 image-caption pairs. The sentences, meticulously generated using ChatGPT, span an array of activities involving living and non-living entities. Leveraging Selenium's web scraping capabilities, high-resolution images from Google enrich this unique dataset, fostering a blend of innovation and practicality.
-
-**Embarking on the Image Captioning Odyssey:**
-
-The project's first objective, image captioning, materializes through two distinct models:
-
-1. **Encoder-Decoder Model with Attention**: Combining the prowess of image encoders (MobileNetV2 or ResNet50) with decoder layers (Embedding, GRU, and Attention), this model synthesizes contextual captions. Images are encoded, producing latent features that serve as the context for the text decoder, culminating in coherent and expressive captions. TensorFlow orchestrates this journey, yet initial attempts yielded less-than-desirable results, plagued by repetitive and inaccurate captions.
-
-2. **ViT BERT Pre-trained Model**: Pivoting towards the ViT BERT model, leveraging PyTorch via hugging face's setup, marks a transformative stride. Fine-tuning on a merged dataset propels this model to exceptional heights, delivering captions that seamlessly capture image nuances. The resulting efficacy, measured through the lens of Rouge score metrics, underscores the power of this approach.
-
-**Charting the Complex Terrain of Image Retrieval:**
-
-Navigating the intricate realm of image retrieval involves traversing two pathways:
-
-1. **From-Scratch CLIP Model**: The inception of a Custom Learning Image Pretext (CLIP) model unveils TensorFlow's prowess. This model endeavours to correlate textual and visual content. Yet, roadblocks emerged as training dynamics posed challenges, hampering parameter updates and progress.
-
-2. **Fine-Tuned ViT Clip Pre-trained Model**: Pivoting towards leveraging a pre-trained model (ViT Clip) and fine-tuning proved instrumental. Through meticulous training on a hybrid dataset, performance milestones were achieved. The extraction of image embeddings and their organization via FAISS indexing streamlined retrieval, propelling efficient search.
-
-**Culmination in a User-Friendly Interface:**
-
-The project's pinnacle is realized through an interactive web application, melding the realms of technology and user experience. FastAPI, HTML, and CSS converge to create an accessible platform, fostering interaction with the project's potent capabilities.
-
-1. **Image Captioning Tab**: Users can seamlessly upload images, where models generate descriptive captions that reflect the intricate details within the images.
-
-2. **Image Retrieval Tab**: A novel facet unveils itself, enabling users to input textual queries and specify the desired number of images. Here, text embeddings guide image selection, creating a symbiotic relationship between queries and curated visual results.
+#### Google's Conceptual Captioning Dataset with Embeddings: https://huggingface.co/datasets/shirsh10mall/Image_Captioning_GCC_Embeddings
 
 
+### *Abstract:*
+In this report, I present an in-depth exploration of an Image-Text Multi-Modal Deep Learning project aimed at achieving two primary objectives: Image Captioning and Image Retrieval. The project leverages a trifecta of diverse datasets, employs advanced deep learning models, and culminates in a user-friendly web application. Despite encountering challenges, the project demonstrates successful implementation and noteworthy outcomes.
 
-With this project, the intricate dance between images and text results in a harmonious fusion of technology and creativity, enhancing user experiences in the world of visual and semantic exploration.
+### 1. **Dataset Collection and Preprocessing:**
+Three datasets are harnessed to encapsulate the multi-modal landscape: Google's Conceptual Captioning dataset, the Flickr 8k Dataset, and a custom dataset generated from ChatGPT and Google Images using Selenium. Each dataset undergoes meticulous preprocessing and labeling, ensuring their suitability for model training and evaluation.
+
+### 2. **Image Captioning:**
+Two distinct models are pursued for Image Captioning. The first model comprises an Encoder-Decoder architecture incorporating a GRU mechanism and Attention layers. The image encoder utilizes pre-trained MobileNetV2 or ResNet50 models, and the decoder is fashioned with embeddings, GRU, and Attention layers. This model's initial implementation yielded suboptimal results due to issues of repeated and erroneous caption generation. Subsequently, a ViT BERT pre-trained model, harnessed through Hugging Face's PyTorch setup, exhibited superior performance. Fine-tuned across the combined dataset, the ViT BERT model showcases promising results in both training and testing phases, evaluated through the Rouge score metric.
+
+### 3. **Image Retrieval:**
+The Image Retrieval component commenced with an attempt to build a CLIP model from scratch, employing TensorFlow and PyTorch. Despite struggling with parameter updates, a pivot was made to fine-tune OpenAI's ViT Clip pre-trained model. This fine-tuned model, trained across all three datasets, manifested commendable results. Embarking on the creation of embeddings for image retrieval, a fine-tuned CLIP model facilitated the extraction of image embeddings. These embeddings were organized using FAISS indexing for efficient similarity-based search.
+
+### 4. **Model Deployment:**
+A pivotal culmination of the project is the development of an interactive web application using FastAPI, HTML, and CSS. The application is partitioned into two user-friendly tabs: one for image captioning and another for image retrieval. In the former, users upload images to generate captions using the ViT BERT model. In the latter, users input text queries to retrieve images based on text-image similarity scores.
+
+### *Challenges Faced:*
+The project was not devoid of challenges. Initial attempts to build a CLIP model from scratch faced obstacles in terms of parameter updates, hindering efficient training. However, this was mitigated through the adoption of a pre-trained ViT Clip model.
+
+*Conclusion:*
+In conclusion, the Image-Text Multi-Modal Deep Learning project successfully tackles the intricate synergy between images and text. Through diverse datasets, advanced models, and meticulous deployment, the project achieves its dual objectives, showcasing promising outcomes in both image captioning and retrieval.
+
+This project report stands as a testament to the potential of deep learning in unraveling the intricate tapestry of multi-modal interactions, with practical applications across domains. It serves as an ideal portfolio piece, exemplifying the ability to harness deep learning techniques for real-world problem-solving.

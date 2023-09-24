@@ -1,10 +1,9 @@
 # **Project Report: Image-Text Multi-Modal Deep Learning**
 
-
+#### CLIP Model - Implementation from Scratch - ResNet50 / ViT - BERT : https://www.kaggle.com/code/shirshmall/clip-model-implementation-resnet-vit-distil-bert/notebook
 #### Fine Tuned CLIP Model: https://huggingface.co/shirsh10mall/Fine_Tuned_CLIP_Model
-
+#### Image Captioning Model - Implementation from Scratch - GRU - Attention Layers: https://www.kaggle.com/code/shirshmall/clip-model-implementation-resnet-vit-distil-bert/notebook
 #### Fine Tuned Image Captioning (ViT-BERT) Model - https://huggingface.co/shirsh10mall/Image_Captioning_FineTune_ViT_BERT_GCC
-
 #### Google's Conceptual Captioning Dataset with Embeddings: https://huggingface.co/datasets/shirsh10mall/Image_Captioning_GCC_Embeddings
 
 
@@ -41,11 +40,8 @@ This project report stands as a testament to the potential of deep learning in u
 1. Image Captioning:
    
 ![image](https://github.com/shirsh10mall/Image-Text-Multi-Models/assets/87264071/1168c15f-08b7-4d96-a506-514eb58a19ff)
-
 ![image](https://github.com/shirsh10mall/Image-Text-Multi-Models/assets/87264071/cde0908c-40c5-4077-aa7c-45b41efa768b)
-
 ![image](https://github.com/shirsh10mall/Image-Text-Multi-Models/assets/87264071/cc75488c-814e-4c56-9634-de39c82bb816)
-
 ![image](https://github.com/shirsh10mall/Image-Text-Multi-Models/assets/87264071/b0ae826e-16df-4a4c-875d-75dd9af7c7a7)
 
 
@@ -53,10 +49,7 @@ This project report stands as a testament to the potential of deep learning in u
 2. Image Retrieval
 
 ![image](https://github.com/shirsh10mall/Image-Text-Multi-Models/assets/87264071/edc600b1-435b-437c-aa4e-024992ac6fe4)
-
 ![image](https://github.com/shirsh10mall/Image-Text-Multi-Models/assets/87264071/e2a17f31-8159-4d55-a847-7344be636bdc)
-
 ![image](https://github.com/shirsh10mall/Image-Text-Multi-Models/assets/87264071/a8e61c17-2c1e-4e1f-9cc7-b348c0190f50)
-
 ![image](https://github.com/shirsh10mall/Image-Text-Multi-Models/assets/87264071/6314bc4d-17af-4d2c-b268-e51dd41975f7)
 

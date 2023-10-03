@@ -32,7 +32,7 @@ The project was not devoid of challenges. Initial attempts to build a CLIP model
 *Conclusion:*
 In conclusion, the Image-Text Multi-Modal Deep Learning project successfully tackles the intricate synergy between images and text. Through diverse datasets, advanced models, and meticulous deployment, the project achieves its dual objectives, showcasing promising outcomes in both image captioning and retrieval.
 
-This project report stands as a testament to the potential of deep learning in unraveling the intricate tapestry of multi-modal interactions, with practical applications across domains. It serves as an ideal portfolio piece, exemplifying the ability to harness deep learning techniques for real-world problem-solving.
+This project report stands as a testament to the potential of deep learning in unravelling the intricate tapestry of multi-modal interactions, with practical applications across domains. It serves as an ideal portfolio piece, exemplifying the ability to harness deep learning techniques for real-world problem-solving.
 
 
 ### Web App Sample:
@@ -46,10 +46,15 @@ This project report stands as a testament to the potential of deep learning in u
 
 
 
-2. Image Retrieval
+2. Image Retrieval:
 
 ![image](https://github.com/shirsh10mall/Image-Text-Multi-Models/assets/87264071/edc600b1-435b-437c-aa4e-024992ac6fe4)
 ![image](https://github.com/shirsh10mall/Image-Text-Multi-Models/assets/87264071/e2a17f31-8159-4d55-a847-7344be636bdc)
 ![image](https://github.com/shirsh10mall/Image-Text-Multi-Models/assets/87264071/a8e61c17-2c1e-4e1f-9cc7-b348c0190f50)
 ![image](https://github.com/shirsh10mall/Image-Text-Multi-Models/assets/87264071/6314bc4d-17af-4d2c-b268-e51dd41975f7)
+
+
+3. Docker Terminal:
+![Screenshot_13](https://github.com/shirsh10mall/Image-Text-Multi-Models/assets/87264071/df60de6e-8ace-4b82-8629-961481d4b33b)
+![Screenshot_1](https://github.com/shirsh10mall/Image-Text-Multi-Models/assets/87264071/549bb387-a9b7-4f01-bed0-81b5a21f9b66)
 
